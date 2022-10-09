@@ -9,25 +9,64 @@
 <body>
     <!-- Добавить тэг header для указания внутри него
     логотипа и меню сайта -->
-    <header>
+    <header class="header">
         <div class="container">
             <!-- Разместить логотип -->
             <a href="">
-                <img src="./img/" alt="Logo">
+                <img src="./img/MyLogo.png" alt="Logo" class="logo-img" width="150" height="auto">
             </a>
-            <nav>
-                <ul>
-                    <li><a href="">Домашняя страница</a></li>
-                    <li><a href="">Наши продукты</a></li>
-                    <li><a href="">Наши услуги</a></li>
-                    <li><a href="">Цены</a></li>
-                    <li><a href="">О нашей фирме</a></li>
-                    <li><a href="">Контакты</a></li>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="" class="nav-link">Домашняя страница</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Наши продукты</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Наши услуги</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Цены</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">О нашей фирме</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
                 </ul>
             </nav>
-            <a href="">Получить доступ</a>
+            <a href="" class="btn">Получить доступ</a>
         </div>
     </header>
+
+    <main>
+        <section class="section-usp">
+            <div class="container">
+                <h1 class="section-usp-heading">Юриспруденция и современные технологии</h1>
+                <p class="section-usp-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptates? Repellat harum velit voluptas ipsam in dolorem molestias deserunt officia expedita maxime. Possimus, repudiandae. Tempore.</p>
+                <a href="" class="btn">Получить доступ</a>
+                <div class="section-usp-btn-description">
+                    <span class="section-usp-ssl-icon">Защищено SSL сертификатом</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-do">
+            <div class="container">
+                <h2 class="section-heading">Что мы делаем</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet,</p>
+                <ul class="section-do-list">
+
+                    <li class="section-do-item">
+                        <svg class="section-do-icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 44q-4.15 0-7.8-1.575-3.65-1.575-6.35-4.275-2.7-2.7-4.275-6.35Q4 28.15 4 24t1.575-7.8Q7.15 12.55 9.85 9.85q2.7-2.7 6.35-4.275Q19.85 4 24 4t7.8 1.575q3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24t-1.575 7.8q-1.575 3.65-4.275 6.35-2.7 2.7-6.35 4.275Q28.15 44 24 44Zm0-3q7.1 0 12.05-4.95Q41 31.1 41 24q0-3.05-1.05-5.85T37 13.05L13.05 37q2.25 1.95 5.075 2.975Q20.95 41 24 41Zm-12.95-6.05 23.9-23.9q-2.3-1.95-5.1-3T24 7q-7.1 0-12.05 4.95Q7 16.9 7 24q0 3.05 1.1 5.875t2.95 5.075Z"></path></svg>
+                        <strong class="section-do-item-header">Убираем рутину</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellat nobis? Expedita veniam deserunt debitis.</p>
+                    </li>
+                    <li class="section-do-item">
+                        <svg class="section-do-icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M21.05 33.1 35.2 18.95l-2.3-2.25-11.85 11.85-6-6-2.25 2.25ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 24q0-4.15 1.575-7.8 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24 4q4.15 0 7.8 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm0-3q7.1 0 12.05-4.975Q41 31.05 41 24q0-7.1-4.95-12.05Q31.1 7 24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24 41Zm0-17Z"></path></svg>
+                        <strong class="section-do-item-header">Добавляем прозрачность</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellat nobis? Expedita veniam deserunt debitis.</p>
+                    </li>
+                    <li class="section-do-item">
+                        <svg class="section-do-icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m19.4 44-1-6.3q-.95-.35-2-.95t-1.85-1.25l-5.9 2.7L4 30l5.4-3.95q-.1-.45-.125-1.025Q9.25 24.45 9.25 24q0-.45.025-1.025T9.4 21.95L4 18l4.65-8.2 5.9 2.7q.8-.65 1.85-1.25t2-.9l1-6.35h9.2l1 6.3q.95.35 2.025.925Q32.7 11.8 33.45 12.5l5.9-2.7L44 18l-5.4 3.85q.1.5.125 1.075.025.575.025 1.075t-.025 1.05q-.025.55-.125 1.05L44 30l-4.65 8.2-5.9-2.7q-.8.65-1.825 1.275-1.025.625-2.025.925l-1 6.3ZM24 30.5q2.7 0 4.6-1.9 1.9-1.9 1.9-4.6 0-2.7-1.9-4.6-1.9-1.9-4.6-1.9-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 2.7 1.9 4.6 1.9 1.9 4.6 1.9Zm0-3q-1.45 0-2.475-1.025Q20.5 25.45 20.5 24q0-1.45 1.025-2.475Q22.55 20.5 24 20.5q1.45 0 2.475 1.025Q27.5 22.55 27.5 24q0 1.45-1.025 2.475Q25.45 27.5 24 27.5Zm0-3.5Zm-2.2 17h4.4l.7-5.6q1.65-.4 3.125-1.25T32.7 32.1l5.3 2.3 2-3.6-4.7-3.45q.2-.85.325-1.675.125-.825.125-1.675 0-.85-.1-1.675-.1-.825-.35-1.675L40 17.2l-2-3.6-5.3 2.3q-1.15-1.3-2.6-2.175-1.45-.875-3.2-1.125L26.2 7h-4.4l-.7 5.6q-1.7.35-3.175 1.2-1.475.85-2.625 2.1L10 13.6l-2 3.6 4.7 3.45q-.2.85-.325 1.675-.125.825-.125 1.675 0 .85.125 1.675.125.825.325 1.675L8 30.8l2 3.6 5.3-2.3q1.2 1.2 2.675 2.05Q19.45 35 21.1 35.4Z"></path></svg>
+                        <strong class="section-do-item-header">Обеспечиваем поддержку</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellat nobis? Expedita veniam deserunt debitis.</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
